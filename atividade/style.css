@@ -8,78 +8,127 @@
 font-family: 'Montserrat', sans-serif;
 */
 
-header{
+* {
+    font-family: sans-serif;
+}
+
+header {
     height: 15vh;
     font-size: xx-large;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+main {
+    height: 95vh;
+    
+}
+
+footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border: 1px solid #666;
-    font-family: 'Montserrat';
-    
+    height: 40vh;
 }
 
-main{
-    height: 75vh;
-    border: 1px solid #666;
-}
 
-footer{
-    height: 10vh;
-}
-
-.group-footer{
-    width: 20%;
-}
-
-table{
-    border-collapse: collapse;
+table {
     width: 80%;
+    border-collapse: collapse;
     margin: 20px;
-    border-spacing: 0;
-    
+   
 }
-th{
-    background-color: #02520f; 
-    color: #ffffff; 
+
+th {
+    background-color: #02520f;
+    color: #ffffff;
     padding: 8px;
     font-family: sans-serif;
 }
 
-.ranking{
+.titulos {
+    text-align: center;
+}
+
+.ranking {
     background-color: #666;
     color: #ffffff;
     width: 10%;
-    font-size: x-large;
-    font-weight: 800;
-    font-family:'Montserrat';
+    font-size: xx-large;
     text-align: center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border: 1px solid #ffffff;
+    padding: 15px 0;
+
+
 }
 
-.pontos{
+.pontos {
     font-size: x-large;
     width: 15%;
-    font-family: "Montserrat";
 }
 
-.img-circle{
+.img-circle {
     width: 50px;
     height: 50px;
-    
-    
 }
 
-.time{
+
+.time {
     font-size: xx-large;
-    font-family: 'Montserrat';
-    
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.time:hover{
+    background-color: #ada7a7;
+}
+
+.time img {
+    height: 40px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.circuloContainer {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: #666;
+    border-radius: 50%;
+    margin: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
     
 }
 
-.time img{
-    height: 40px;
+.circulo:hover {
+    background-color: green;
+}
 
+.texto {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 90px ;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
